@@ -15,9 +15,9 @@
     <nav class="flex flex-col   sm:flex-row justify-between my-6 mx-5  lg:mx-[72px]">
         <img src="./dccl--responsive-simple-homepage/alarado-icon-homepage.svg" alt="" class="size-[35%] sm:size-[18%] lg:size-[15%] pt-[5px]">
         
-        <ol class="menu space-x-7 flex-col pt-5 h-full w-[60%] bg-white absolute right-0 p-[32px] space-y-[50px] hidden sm:flex  sm:flex-row sm:h-0 sm:space-y-0 sm:pt-[7px] sm:mr-[110px] " >
+        <ol class="menu space-y-[40px] sm:space-x-7 flex-col pt-5 h-full w-[60%] bg-white absolute right-0 p-[32px]  hidden sm:flex  sm:flex-row sm:h-0 sm:space-y-0 sm:pt-[7px] sm:mr-[110px] " >
 
-            <li class="cursor-pointer ml-7 ">
+            <li class="cursor-pointer  ">
               About us
             </li>
             <li class="cursor-pointer ">
@@ -178,6 +178,15 @@
     }
     window.onresize = () => {   // Call screenhange function when the window is resized
         screenchange();
+        state=false;
+        if (darkmodeOn==true){ // changing the img src when darkmode is on.
+                sidemenubtn.src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1tZW51Ij48bGluZSB4MT0iNCIgeDI9IjIwIiB5MT0iMTIiIHkyPSIxMiIvPjxsaW5lIHgxPSI0IiB4Mj0iMjAiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI0IiB4Mj0iMjAiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+";
+            }
+            // changing img src when dark mode is off.
+        else{
+                sidemenubtn.src="data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1lbnUiPjxsaW5lIHgxPSI0IiB4Mj0iMjAiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjQiIHgyPSIyMCIgeTE9IjYiIHkyPSI2Ii8+PGxpbmUgeDE9IjQiIHgyPSIyMCIgeTE9IjE4IiB5Mj0iMTgiLz48L3N2Zz4=";
+
+            }
        
     }
 
